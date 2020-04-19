@@ -3,7 +3,7 @@ module Fundsrb
     API_ENDPOINT = "https://www.fundsexplorer.com.br/funds".freeze
 
     def query(ticket)
-      parser(Nokogiri::HTML(open("#{API_ENDPOINT}/#{ticket}")))
+      parser(Nokogiri::HTML(open("#{API_ENDPOINT}/#{ticket}"), nil, Encoding::UTF_8.to_s))
     end
 
     private
