@@ -24,7 +24,7 @@ Or install it yourself as:
 require 'fundsrb'
 
 client = Fundsrb::Client.new
-client.quotes('BIDI4')
+client.quotes('ALZR11')
 
 {
   :liquidity=>"7.828",
